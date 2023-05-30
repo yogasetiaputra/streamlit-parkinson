@@ -63,7 +63,7 @@ def app(df, x, y):
         score = score
         st.info('Prediksi Sukses...')
 
-        if (prediction == 0):
+        if (prediction[0] == 1):
             st.warning('Orang tersebut rentang terkena penyakit Parkinson')
         else:
             st.success('Orang tersebut sehat walafiat')
